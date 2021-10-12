@@ -7,12 +7,19 @@
 > * racinggame.controller.RacingGameController 클래스의 메서드들이 REST API의 엔드포인트라고 가정하였다.
 > * Application 클래스의 main() 함수 내에서 RacingGameController의 메서드들을 호출함으로써, 클라이언트의 역할을 한다고 가정하였다.
 > * racinggame.model 패키지 내의 클래스들이 주된 비즈니스 로직을 담당한다.
+> * 테스트 클래스 내의 대부분의 메서드명은 테스트하고자하는 메서드와 동일하다.
 
 ## 실행 방법
 > * Application 클래스의 main() 함수를 실행한다.
 > * 사용자는 쉼표(,)를 기준으로 구분하여 경주할 자동차 이름들을 입력한다.
 > * 사용자는 경주 횟수를 입력한다.
 > * 콘솔창에 사용자가 입력한 경주 횟수만큼, 경주 진행 결과가 출력되며 마지막에 최종 우승자 목록이 출력된다.
+> * 실행 예시
+> 
+> ![example](https://user-images.githubusercontent.com/36442984/137003008-ad8c2944-4e80-464e-a739-dc97a1c181e5.png)
+
+## 클래스 다이어그램
+> ![model](https://user-images.githubusercontent.com/36442984/137002555-4155969f-c777-4d9a-b8ca-051ae5e82438.png)
 
 ## 기능 목록
 > * 사용자로부터 자동차 이름들을 쉼표(,)를 기준으로 구분하여 입력받는다.
