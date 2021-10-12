@@ -21,6 +21,7 @@ public class CarCollectionTest {
 	private static final String WINNING_CARS_STRING = String.join(",", TOM, JERRY);
 	private static final String CARS_STATUS_STRING =
 		"mason : " + System.lineSeparator() + "tom : -" + System.lineSeparator() + "jerry : -" + System.lineSeparator();
+	private static final int EXPECTED_DICE_RESULTS_SIZE = 3;
 
 	private CarCollection cars;
 
@@ -59,5 +60,10 @@ public class CarCollectionTest {
 	@Test
 	void toStatusString() {
 		assertThat(cars.toStatusString()).isEqualTo(CARS_STATUS_STRING);
+	}
+
+	@Test
+	void generateDiceResults() {
+		assertThat(cars.generateDiceResults()).hasSize(EXPECTED_DICE_RESULTS_SIZE);
 	}
 }

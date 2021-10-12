@@ -76,4 +76,14 @@ public class CarCollection {
 
 		return result.toString();
 	}
+
+	public List<DiceResult> generateDiceResults() {
+		List<DiceResult> result = new ArrayList<>();
+
+		for (int i = 0; i < cars.size(); i++) {
+			result.add(Dice.roll());
+		}
+
+		return result;
+	}
 }
